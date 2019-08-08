@@ -1,0 +1,15 @@
+Power Supply @ 3.3V
+
+LEDS:
+
+LED1 - PN: ORH-R36G - COLOR: RED - LINK UP
+Max Vf = 2.3 V @ If = 20 mA -> ~150 mcd
+3.3-2.3 / .02 = 50 Ohm
+
+LED2 - PN: ORH-G36G - COLOR: GREEN - BATT
+Max Vf = 3.2 V @ If = 5mA -> ~210 mcd
+3.3-3.2 / .005 = 20 Ohm
+
+LED3 - PN: ORH-B36G - COLOR: BLUE - COMM
+Max Vf = 3.1 V @ If = 2mA -> ~40 mcd
+3.3-3.1 / .002 = 100 Ohm --> Increase Current -> 50 Ohm

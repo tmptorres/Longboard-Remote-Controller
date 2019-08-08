@@ -1,0 +1,9 @@
+[submodule "External Libraries/Adafruit-Eagle-Library"]
+	path = External Libraries/Adafruit-Eagle-Library
+	url = https://github.com/adafruit/Adafruit-Eagle-Library
+[submodule "External Libraries/SparkFun-Eagle-Libraries"]
+	path = External Libraries/SparkFun-Eagle-Libraries
+	url = https://github.com/sparkfun/SparkFun-Eagle-Libraries
+[submodule "External Libraries/eagle-pcb-mounted-battery-holders"]
+	path = External Libraries/eagle-pcb-mounted-battery-holders
+	url = https://github.com/iotdevspot/eagle-pcb-mounted-battery-holders.git
