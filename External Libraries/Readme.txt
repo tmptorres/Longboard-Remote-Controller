@@ -1,0 +1,1 @@
+Use the "battery-holders-modified.lbr" library file for the BLM 18650 battery holder

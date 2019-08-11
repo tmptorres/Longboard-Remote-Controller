@@ -785,89 +785,6 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="battery-holders">
-<packages>
-<package name="BLOSSOM-BLM-18650-1PCS" urn="urn:adsk.eagle:footprint:7288997/2">
-<pad name="2" x="0" y="0" drill="3"/>
-<pad name="1" x="-72" y="0" drill="3"/>
-<wire x1="-77" y1="-12" x2="-77" y2="12" width="0.127" layer="21"/>
-<wire x1="-77" y1="12" x2="0" y2="12" width="0.127" layer="21"/>
-<wire x1="0" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
-<wire x1="5" y1="12" x2="5" y2="-12" width="0.127" layer="21"/>
-<wire x1="5" y1="-12" x2="-67" y2="-12" width="0.127" layer="21"/>
-<wire x1="-67" y1="-12" x2="-77" y2="-12" width="0.127" layer="21"/>
-<wire x1="-74" y1="-9" x2="-74" y2="-10" width="0.127" layer="21"/>
-<wire x1="-74" y1="-9" x2="-74" y2="-8" width="0.127" layer="21"/>
-<wire x1="-75" y1="-9" x2="-73" y2="-9" width="0.127" layer="21"/>
-<hole x="-64" y="0" drill="0.0889"/>
-<hole x="-8" y="-0.19" drill="0.0889"/>
-</package>
-<package name="BLOSSOM-BLM-18650-1PCS-NO-SCREWS-SMALL-HOLES">
-<pad name="2" x="0" y="0" drill="2.54"/>
-<pad name="1" x="-72" y="0" drill="2.54"/>
-<wire x1="-77" y1="-12" x2="-77" y2="12" width="0.127" layer="21"/>
-<wire x1="-77" y1="12" x2="0" y2="12" width="0.127" layer="21"/>
-<wire x1="0" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
-<wire x1="5" y1="12" x2="5" y2="-12" width="0.127" layer="21"/>
-<wire x1="5" y1="-12" x2="-67" y2="-12" width="0.127" layer="21"/>
-<wire x1="-67" y1="-12" x2="-77" y2="-12" width="0.127" layer="21"/>
-<wire x1="-74" y1="-9" x2="-74" y2="-10" width="0.127" layer="21"/>
-<wire x1="-74" y1="-9" x2="-74" y2="-8" width="0.127" layer="21"/>
-<wire x1="-75" y1="-9" x2="-73" y2="-9" width="0.127" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="BLOSSOM-BLM-18650-1PCS" urn="urn:adsk.eagle:package:7289004/3" type="model">
-<packageinstances>
-<packageinstance name="BLOSSOM-BLM-18650-1PCS"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="BATT_1CELL" urn="urn:adsk.eagle:symbol:7289002/1">
-<wire x1="-3.81" y1="2.54" x2="0" y2="2.54" width="0.3048" layer="94"/>
-<wire x1="0" y1="2.54" x2="3.81" y2="2.54" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.3048" layer="94"/>
-<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="5.588" x2="2.54" y2="4.572" width="0.3048" layer="94"/>
-<wire x1="2.032" y1="5.08" x2="3.048" y2="5.08" width="0.3048" layer="94"/>
-<wire x1="0" y1="7.62" x2="0" y2="2.54" width="0.3048" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="-3.81" width="0.3048" layer="94"/>
-<pin name="-" x="0" y="-3.81" length="point" rot="R90"/>
-<pin name="+" x="0" y="7.62" length="point" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BLOSSOM-BLM-18650-1PCS" urn="urn:adsk.eagle:component:7289009/2" locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="BATT_1CELL" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="BLOSSOM-BLM-18650-1PCS">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7289004/3"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NO-SCREWS" package="BLOSSOM-BLM-18650-1PCS-NO-SCREWS-SMALL-HOLES">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -13507,6 +13424,89 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="battery-holders-modified">
+<packages>
+<package name="BLOSSOM-BLM-18650-1PCS-NO-SCREWS-SMALL-HOLES">
+<pad name="2" x="0" y="0" drill="2.54"/>
+<pad name="1" x="-72" y="0" drill="2.54"/>
+<wire x1="-77" y1="-12" x2="-77" y2="12" width="0.127" layer="21"/>
+<wire x1="-77" y1="12" x2="0" y2="12" width="0.127" layer="21"/>
+<wire x1="0" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
+<wire x1="5" y1="12" x2="5" y2="-12" width="0.127" layer="21"/>
+<wire x1="5" y1="-12" x2="-67" y2="-12" width="0.127" layer="21"/>
+<wire x1="-67" y1="-12" x2="-77" y2="-12" width="0.127" layer="21"/>
+<wire x1="-74" y1="-9" x2="-74" y2="-10" width="0.127" layer="21"/>
+<wire x1="-74" y1="-9" x2="-74" y2="-8" width="0.127" layer="21"/>
+<wire x1="-75" y1="-9" x2="-73" y2="-9" width="0.127" layer="21"/>
+</package>
+<package name="BLOSSOM-BLM-18650-1PCS" urn="urn:adsk.eagle:footprint:7288997/2">
+<pad name="2" x="0" y="0" drill="3"/>
+<pad name="1" x="-72" y="0" drill="3"/>
+<wire x1="-77" y1="-12" x2="-77" y2="12" width="0.127" layer="21"/>
+<wire x1="-77" y1="12" x2="0" y2="12" width="0.127" layer="21"/>
+<wire x1="0" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
+<wire x1="5" y1="12" x2="5" y2="-12" width="0.127" layer="21"/>
+<wire x1="5" y1="-12" x2="-67" y2="-12" width="0.127" layer="21"/>
+<wire x1="-67" y1="-12" x2="-77" y2="-12" width="0.127" layer="21"/>
+<wire x1="-74" y1="-9" x2="-74" y2="-10" width="0.127" layer="21"/>
+<wire x1="-74" y1="-9" x2="-74" y2="-8" width="0.127" layer="21"/>
+<wire x1="-75" y1="-9" x2="-73" y2="-9" width="0.127" layer="21"/>
+<hole x="-64" y="0" drill="0.0889"/>
+<hole x="-8" y="-0.19" drill="0.0889"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="BLOSSOM-BLM-18650-1PCS" urn="urn:adsk.eagle:package:7289004/3" type="model">
+<packageinstances>
+<packageinstance name="BLOSSOM-BLM-18650-1PCS"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="BATT_1CELL" urn="urn:adsk.eagle:symbol:7289002/1">
+<wire x1="-3.81" y1="2.54" x2="0" y2="2.54" width="0.3048" layer="94"/>
+<wire x1="0" y1="2.54" x2="3.81" y2="2.54" width="0.3048" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.3048" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="5.588" x2="2.54" y2="4.572" width="0.3048" layer="94"/>
+<wire x1="2.032" y1="5.08" x2="3.048" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="2.54" width="0.3048" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="-3.81" width="0.3048" layer="94"/>
+<pin name="-" x="0" y="-3.81" length="point" rot="R90"/>
+<pin name="+" x="0" y="7.62" length="point" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BLOSSOM-BLM-18650-1PCS" urn="urn:adsk.eagle:component:7289009/2" locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="BATT_1CELL" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="BLOSSOM-BLM-18650-1PCS">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7289004/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO-SCREWS" package="BLOSSOM-BLM-18650-1PCS-NO-SCREWS-SMALL-HOLES">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13520,7 +13520,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="NRF24L01" library="diy-modules" deviceset="WIRELESS-NRF24L01" device=""/>
 <part name="JOY" library="SparkFun-Switches" deviceset="JOYSTICK_THUMB" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U$2" library="battery-holders" deviceset="BLOSSOM-BLM-18650-1PCS" device="NO-SCREWS" value="BLOSSOM-BLM-18650-1PCSNO-SCREWS"/>
+<part name="U$2" library="battery-holders-modified" deviceset="BLOSSOM-BLM-18650-1PCS" device="NO-SCREWS" value="BLOSSOM-BLM-18650-1PCSNO-SCREWS"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
@@ -13542,7 +13542,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="CUS10S30"/>
-<part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
@@ -13639,7 +13639,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="-69.0626" y="124.46" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-66.2686" y="124.46" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S2" gate="1" x="-30.48" y="106.68" smashed="yes">
+<instance part="S1" gate="1" x="-30.48" y="106.68" smashed="yes">
 <attribute name="NAME" x="-36.83" y="104.14" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-34.29" y="109.855" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -13755,10 +13755,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="91.44" x2="-10.16" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="P"/>
+<pinref part="S1" gate="1" pin="P"/>
 <wire x1="-30.48" y1="101.6" x2="-30.48" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-30.48" y="88.9"/>
-<pinref part="S2" gate="1" pin="P1"/>
+<pinref part="S1" gate="1" pin="P1"/>
 <wire x1="-27.94" y1="101.6" x2="-30.48" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-30.48" y="101.6"/>
 </segment>
@@ -13923,11 +13923,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="S2" gate="1" pin="S"/>
+<pinref part="S1" gate="1" pin="S"/>
 <wire x1="-30.48" y1="111.76" x2="-30.48" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="119.38" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="ARDUINO-PRO-MINI-3V3" gate="G$1" pin="D4"/>
-<pinref part="S2" gate="1" pin="S1"/>
+<pinref part="S1" gate="1" pin="S1"/>
 <wire x1="-27.94" y1="111.76" x2="-30.48" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-30.48" y="111.76"/>
 </segment>

@@ -1,0 +1,16 @@
+"Part";"Value";"Device";"Package";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";"PROD_ID";"SF_SKU";"SPICEPREFIX";
+"ARDUINO-PRO-MINI-3V3";"ARDUINO-PRO-MINI-3.3V";"ARDUINO-PRO-MINI-3.3V";"ARDUINO-PRO-MINI";"Arduino Pro Mini and compatible devices";"";"";"";"";"";"";"";
+"C1";"10u";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";"";"";"";"";"";"C";
+"C2";"330n";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";"";"";"";"";"";"C";
+"D1";"CUS10S30";"DIODE-SOD323-W";"SOD323-W";"DIODE";"";"";"";"";"";"";"";
+"JOY";"JOYSTICK_THUMB";"JOYSTICK_THUMB";"JOYSTICK";"Analog Thumb Joystick";"";"";"";"";"COMP-09744";"COM-09032";"";
+"JP1";"";"PINHD-1X6";"1X06";"PIN HEADER";"";"";"";"";"";"";"";
+"L1";"ORH-R36G";"LEDCHIP-LED0603";"CHIP-LED0603";"LED";"";"";"";"";"";"";"";
+"L2";"ORH-G36G";"LEDCHIP-LED0603";"CHIP-LED0603";"LED";"";"";"";"";"";"";"";
+"L3";"ORH-B36G";"LEDCHIP-LED0603";"CHIP-LED0603";"LED";"";"";"";"";"";"";"";
+"NRF24L01";"WIRELESS-NRF24L01";"WIRELESS-NRF24L01";"WIRELESS-NRF24L01";"2.4 GHz Wireless Module based on NRF24L01 chip";"";"";"";"";"";"";"";
+"R1";"50";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"";"";"R";
+"R2";"20";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"";"";"R";
+"R3";"50";"R-EU_R0603";"R0603";"RESISTOR, European symbol";"";"";"";"";"";"";"R";
+"S1";"";"10-XX";"B3F-10XX";"OMRON SWITCH";"";"B3F-1000";"176432";"36M3542";"";"";"";
+"U$2";"BLOSSOM-BLM-18650-1PCSNO-SCREWS";"BLOSSOM-BLM-18650-1PCSNO-SCREWS";"BLOSSOM-BLM-18650-1PCS-NO-SCREWS-SMALL-HOLES";"";"";"";"";"";"";"";"";
